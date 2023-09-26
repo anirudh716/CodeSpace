@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Lilita One', cursive;
+}
+
+hr{
+    width :50%;  
+    margin: 0 auto;
+}
