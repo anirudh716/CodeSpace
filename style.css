@@ -17,11 +17,12 @@ body{
 
 .nav{
     background-color: #1f1e1e;
-    height: 30px;
+    height: 50px;
     position: relative;
 }
 
 .nav > label{
+    font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     color: #ffffff;
@@ -30,11 +31,14 @@ body{
 
 #languages {
     margin: 5px;
-    width: 80px;
+    width: 150px;
+    height: 35px;
     border: solid 2px rgb(63, 126, 8);
     border-radius: 5px;
+    cursor: pointer;
     background-color: #1f1e1e;
     color: #ffffff;
+    font-size: 15px;
     outline: none;
     transition: background-color 0.2s color 0.2s;
 }
@@ -49,22 +53,26 @@ body{
     position: absolute;
     right: 0;
     margin: 5px 15px;
-    width: 80px;
+    width: 100px;
+    height: 35px;
     font-size: 15px;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: rgb(63, 126, 8);
-    border: 2px solid rgb(63, 126, 8);
+    border: 2px solid rgb(46, 97, 1);
     border-radius: 5px;
 }
 
-.code{
-    width: 70%;
-    height: 6vh;
-    font-family: monospace; 
-    resize: none;
+#run-btn:hover{
+    cursor: pointer;
 }
 
-.code-area .code-input{
-    width: 30%;
+.CodeMirror{
+    margin-left: 2px;
+    width: 70%;
+    height: 85vh;
+    font-size: 15px;
+    resize: none;
+    border: none;
 }
+
 
