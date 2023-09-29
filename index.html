@@ -24,11 +24,21 @@
 
       <button id="run-btn">Run <i class="fa-solid fa-play"></i> </button>
     </div>
-    <div class="code-area">
-      <textarea id="editor"> cout << "Hello" </textarea>
-      <!-- <textarea class="code-input"></textarea>
-      <textarea class="code-output"></textarea> -->
-    </div>
+    <div class="grid-code-area">
+      <div class="editor-container">
+          <textarea id="editor">cout << "Hello"</textarea>
+      </div>
+      <div class="io-container">
+          <div class="input-container">
+              <label for="input">Input</label>
+              <textarea id="input"></textarea>
+          </div>
+          <div class="output-container">
+              <label for="output">Output</label>
+              <textarea id="output"></textarea>
+          </div>
+      </div>
+  </div>
 
     <script src="https://kit.fontawesome.com/d43e5df47f.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>

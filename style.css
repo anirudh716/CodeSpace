@@ -75,4 +75,16 @@ body{
     border: none;
 }
 
+.grid-code-area{
+    display: grid;
+    grid-template-columns: 1000px 500px auto;
+    grid-gap: 10px;
+}
 
+.input-container{
+    width: 30%;
+    /* height: 85vh; */
+    font-size: 15px;
+    resize: none;
+    border: none;
+}
