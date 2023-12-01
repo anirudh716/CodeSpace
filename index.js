@@ -12,20 +12,29 @@ var run = document.getElementById("run-btn")
 
 var option = document.getElementById("languages");
 option.addEventListener("change", function(){
-    if (option.value == "c"){
-        editor.setOption("mode","text/x-csrc");
-    }
-    else if (option.value == "java"){
+    if (option.value == "java"){
         editor.setOption("mode","text/x-java");
+        editor.setValue(codeSnippets.java);
     }
     else if (option.value == "cpp"){
         editor.setOption("mode","text/x-c++src");
+        editor.setValue(codeSnippets.cpp);
     }
     else if (option.value == "python"){
         editor.setOption("mode","text/x-python");
+        editor.setValue(codeSnippets.python);
+    }
+    else{
+        editor.setValue(codeSnippets.none);
     }
 });
 
+const codeSnippets = {
+    none: 'Choose A Language From Above',
+    cpp: '#include <iostream>\nusing namespace std;\n\nint main() {\n  cout << "Hello";\n  return 0;\n}',
+    java: 'public class HelloWorld {\n  public static void main(String[] args) {\n    System.out.println("Hello");\n  }\n}',
+    python: 'print("Hello")'
+};
 var code;
 run.addEventListener("click", async function(){
     code={
@@ -43,4 +52,5 @@ run.addEventListener("click", async function(){
     var d = await oData.json()
     output.value = d.output
 })
+
 
