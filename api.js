@@ -52,7 +52,7 @@ app.post("/compile", function(req, res){
                         res.send(data)
                     }
                     else{
-                        res.send({output:"Error"})
+                        res.send({output:data})
                     }
                 });    
             }
@@ -87,7 +87,7 @@ app.post("/compile", function(req, res){
                         res.send(data)
                     }
                     else{
-                        res.send({output:"Error"})
+                        res.send({output:data})
                     }        
                 });
             }
